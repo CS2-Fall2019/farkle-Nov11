@@ -1,0 +1,23 @@
+﻿<Window x:Class="farkle.Winner"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:farkle"
+        mc:Ignorable="d"
+        Title="Winner" Height="450" Width="800" Background="#FF36DA81">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblWinner" Content="Congratulations Player 1 Wins!" HorizontalAlignment="Center" Margin="78,76,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36" Width="647" Height="61" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnNewGame" Content="Start New Game" HorizontalAlignment="Left" Margin="226,280,0,0" VerticalAlignment="Top" Width="122" Height="55" Click="BtnNewGame_Click"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="432,280,0,0" VerticalAlignment="Top" Width="122" Height="55" Click="BtnExit_Click" Grid.ColumnSpan="2"/>
+        <RadioButton x:Name="rdoOnePlayer" Content="1 Player" HorizontalAlignment="Left" Margin="273,164,0,0" VerticalAlignment="Top" IsChecked="True" FontSize="22"/>
+        <RadioButton x:Name="rdoThreePlayers" Content="3 Players" HorizontalAlignment="Left" Margin="388,164,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <RadioButton x:Name="rdoTwoPlayer" Content="2 Players" HorizontalAlignment="Left" Margin="273,199,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <RadioButton x:Name="rdoFourPlayers" Content="4 Players" HorizontalAlignment="Left" Margin="388,199,0,0" VerticalAlignment="Top" FontSize="22"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,100 @@
+﻿<Window x:Name="farkle" x:Class="farkle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:farkle"
+        mc:Ignorable="d"
+        Title="Farkle" Height="455.396" Width="800" Background="{x:Null}">
+    <Grid HorizontalAlignment="Left" Width="792" Background="#FF305B04" Loaded="Grid_Loaded">
+        <Label x:Name="lblPlayerInformation" Content="Player X's Turn ---------" HorizontalAlignment="Left" Margin="0,293,0,0" VerticalAlignment="Top" FontFamily="Sitka Banner" FontSize="24" Foreground="White" FontStyle="Italic"/>
+        <Label x:Name="lblPendingScore" Content="Pending Score: 0" HorizontalAlignment="Left" Margin="10,345,0,0" VerticalAlignment="Top" Foreground="#FFF10C0C" FontSize="18" Width="216" FontWeight="Bold"/>
+        <Label x:Name="lblDifficulty" Content="Easy" HorizontalAlignment="Left" Margin="10,385,0,0" VerticalAlignment="Top" Foreground="#FF68FF00" FontSize="14" BorderBrush="#FF171717" Width="216" FontWeight="Bold"/>
+        <Label x:Name="lblCurrentlySavedDice" Content="Currently Saved Dice ---------" HorizontalAlignment="Left" Margin="267,292,0,0" VerticalAlignment="Top" FontFamily="Sitka Banner" FontSize="24" Foreground="White" FontStyle="Italic"/>
+        <Image x:Name="imgSavedDie1" HorizontalAlignment="Left" Height="50" Margin="267,344,0,0" VerticalAlignment="Top" Width="50" Source="Resources/1Die.jpg" Visibility="Hidden" MouseLeftButtonDown="ImgSavedDie1_MouseLeftButtonDown"/>
+        <Image x:Name="imgSavedDie2" HorizontalAlignment="Left" Height="50" Margin="322,344,0,0" VerticalAlignment="Top" Width="50" Source="Resources/2Die.jpg" Visibility="Hidden" MouseLeftButtonDown="ImgSavedDie2_MouseLeftButtonDown"/>
+        <Image x:Name="imgSavedDie3" HorizontalAlignment="Left" Height="50" Margin="377,344,0,0" VerticalAlignment="Top" Width="50" Source="Resources/3Die.jpg" Visibility="Hidden" MouseLeftButtonDown="ImgSavedDie3_MouseLeftButtonDown"/>
+        <Image x:Name="imgSavedDie4" HorizontalAlignment="Left" Height="50" Margin="432,344,0,0" VerticalAlignment="Top" Width="50" Source="Resources/4Die.jpg" Visibility="Hidden" MouseLeftButtonDown="ImgSavedDie4_MouseLeftButtonDown"/>
+        <Image x:Name="imgSavedDie5" HorizontalAlignment="Left" Height="50" Margin="487,344,0,0" VerticalAlignment="Top" Width="50" Source="Resources/5Die.jpg" Visibility="Hidden" MouseLeftButtonDown="ImgSavedDie5_MouseLeftButtonDown"/>
+        <Image x:Name="imgSavedDie6" HorizontalAlignment="Left" Height="50" Margin="542,344,0,0" VerticalAlignment="Top" Width="50" Source="Resources/6Die.jpg" Visibility="Hidden" MouseLeftButtonDown="ImgSavedDie6_MouseLeftButtonDown"/>
+        <Label x:Name="lblMenu" Content="Menu ---------" HorizontalAlignment="Left" Margin="618,292,0,0" VerticalAlignment="Top" FontFamily="Sitka Banner" FontSize="24" Foreground="White" FontStyle="Italic"/>
+        <Button x:Name="btnRoll" Content="Roll" HorizontalAlignment="Left" Margin="618,341,0,0" VerticalAlignment="Top" Width="75" Click="BtnRoll_Click"/>
+        <Button x:Name="btnScoring" Content="Scoring" HorizontalAlignment="Left" Margin="707,341,0,0" VerticalAlignment="Top" Width="75" Click="BtnScoring_Click"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="707,371,0,0" VerticalAlignment="Top" Width="75" Click="BtnExit_Click"/>
+        <Button x:Name="btnNextTurn" Content="Next Turn" HorizontalAlignment="Left" Margin="618,371,0,0" VerticalAlignment="Top" Width="75" Click="BtnNextTurn_Click"/>
+        <Image x:Name="imgRoll1" HorizontalAlignment="Left" Height="50" Margin="81,56,0,0" VerticalAlignment="Top" Width="50" Source="pack://siteoforigin:,,,/Resources/1Die.jpg" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="ImgRoll1_MouseLeftButtonDown">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-19.997"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgRoll2" HorizontalAlignment="Left" Height="50" Margin="278,78,0,0" VerticalAlignment="Top" Width="50" Source="pack://siteoforigin:,,,/Resources/6Die.jpg" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="ImgRoll2_MouseLeftButtonDown">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="47.631"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgRoll3" HorizontalAlignment="Left" Height="50" Margin="465,29,0,0" VerticalAlignment="Top" Width="50" Source="pack://siteoforigin:,,,/Resources/4Die.jpg" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="ImgRoll3_MouseLeftButtonDown">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="18.507"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgRoll4" HorizontalAlignment="Left" Height="50" Margin="52,196,0,0" VerticalAlignment="Top" Width="50" Source="pack://siteoforigin:,,,/Resources/2Die.jpg" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="ImgRoll4_MouseLeftButtonDown">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-77.232"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgRoll5" HorizontalAlignment="Left" Height="50" Margin="215,176,0,0" VerticalAlignment="Top" Width="51" Source="pack://siteoforigin:,,,/Resources/5Die.jpg" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="ImgRoll5_MouseLeftButtonDown">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-32.51"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgRoll6" HorizontalAlignment="Left" Height="50" Margin="450,194,0,0" VerticalAlignment="Top" Width="50" Source="pack://siteoforigin:,,,/Resources/3Die.jpg" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="ImgRoll6_MouseLeftButtonDown">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="86.955"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label x:Name="lblPlayerOneScore" Content="Score: 0" HorizontalAlignment="Left" Margin="618,37,-42,0" VerticalAlignment="Top" Foreground="White" FontSize="18" BorderBrush="#FF171717" Width="216" FontWeight="Bold"/>
+        <Label x:Name="lblPlayerTwoScore" Content="Score: 0" HorizontalAlignment="Left" Margin="618,103,-42,0" VerticalAlignment="Top" Foreground="White" FontSize="18" BorderBrush="#FF171717" Width="216" FontWeight="Bold"/>
+        <Label x:Name="lblPlayerThreeScore" Content="Score: 0" HorizontalAlignment="Left" Margin="618,169,-42,0" VerticalAlignment="Top" Foreground="White" FontSize="18" BorderBrush="#FF171717" Width="216" FontWeight="Bold"/>
+        <Label x:Name="lblPlayerFourScore" Content="Score: 0" HorizontalAlignment="Left" Margin="618,235,-42,0" VerticalAlignment="Top" Foreground="White" FontSize="18" BorderBrush="#FF171717" Width="216" FontWeight="Bold"/>
+        <Label x:Name="lblPlayerOne" Content="Player 1" HorizontalAlignment="Left" Margin="650,10,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+        <Label x:Name="lblPlayerTwo" Content="Player 2" HorizontalAlignment="Left" Margin="650,76,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+        <Label x:Name="lblPlayerThree" Content="Player 3" HorizontalAlignment="Left" Margin="650,142,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="#FF0A0501"/>
+        <Label x:Name="lblPlayerFour" Content="Player 4" HorizontalAlignment="Left" Margin="650,208,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="#FF150C04"/>
+        <Border x:Name="bdrDie1" BorderBrush="White" BorderThickness="3" HorizontalAlignment="Left" Height="50" Margin="267,344,0,0" VerticalAlignment="Top" Width="50" Visibility="Hidden"/>
+        <Border x:Name="bdrDie2" BorderBrush="White" BorderThickness="3" HorizontalAlignment="Left" Height="50" Margin="322,344,0,0" VerticalAlignment="Top" Width="50" Visibility="Hidden"/>
+        <Border x:Name="bdrDie3" BorderBrush="White" BorderThickness="3" HorizontalAlignment="Left" Height="50" Margin="377,344,0,0" VerticalAlignment="Top" Width="50" Visibility="Hidden"/>
+        <Border x:Name="bdrDie4" BorderBrush="White" BorderThickness="3" HorizontalAlignment="Left" Height="50" Margin="432,344,0,0" VerticalAlignment="Top" Width="50" Visibility="Hidden"/>
+        <Border x:Name="bdrDie5" BorderBrush="White" BorderThickness="3" HorizontalAlignment="Left" Height="50" Margin="487,344,0,0" VerticalAlignment="Top" Width="50" Visibility="Hidden"/>
+        <Border x:Name="bdrDie6" BorderBrush="White" BorderThickness="3" HorizontalAlignment="Left" Height="50" Margin="542,344,0,0" VerticalAlignment="Top" Width="50" Visibility="Hidden"/>
+    </Grid>
+</Window>

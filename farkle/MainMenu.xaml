@@ -1,0 +1,71 @@
+﻿<Window x:Class="farkle.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:farkle"
+        mc:Ignorable="d"
+        Title="MainMenu" Height="360.174" Width="385.611">
+    <Grid Background="#FF099709" Margin="0,0,0,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="105" Margin="56,29,0,0" VerticalAlignment="Top" Width="235" Source="pack://siteoforigin:,,,/Resources/Farkle.png" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="70,271,0,0" VerticalAlignment="Top" Width="87" Height="40" Background="#FFF90404" FontFamily="Yu Gothic UI Semibold" FontSize="20" Click="BtnStart_Click"/>
+        <Button x:Name="btnAbout" Content="About" HorizontalAlignment="Left" Margin="0,177,0,0" VerticalAlignment="Top" Width="87" Height="40" Background="#FFF90404" FontFamily="Yu Gothic UI Semibold" FontSize="20" Click="BtnAbout_Click" Grid.Column="1"/>
+        <Button x:Name="btnScoring" Content="Scoring" HorizontalAlignment="Left" Margin="0,235,0,0" VerticalAlignment="Top" Width="87" Height="40" Background="#FFF90404" FontFamily="Yu Gothic UI Semibold" FontSize="20" Click="BtnScoring_Click" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="65" Margin="3,77,0,0" VerticalAlignment="Top" Width="81" Source="Resources/3Die.jpg" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="-1" Grid.Column="1">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="16.095"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="64" Margin="4,19,0,0" VerticalAlignment="Top" Width="80" Source="Resources/6Die.jpg" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="-2" Grid.Column="1">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-24.103"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label x:Name="label" HorizontalAlignment="Left" Margin="86,133,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPlayers" Content="How many players do you want?" HorizontalAlignment="Left" Margin="34,143,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.412,-0.134">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-13" Y="-14"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <RadioButton x:Name="rdoOnePlayer" Content="1 Player" HorizontalAlignment="Left" Margin="46,159,0,0" VerticalAlignment="Top" GroupName="Player" Checked="RdoOnePlayer_Checked"/>
+        <RadioButton x:Name="rdoTwoPlayer" Content="2 Players" HorizontalAlignment="Left" Margin="46,175,0,0" VerticalAlignment="Top" GroupName="Player" Checked="RdoTwoPlayer_Checked"/>
+        <RadioButton x:Name="rdoThreePlayer" Content="3 Players" HorizontalAlignment="Left" Margin="117,159,0,0" VerticalAlignment="Top" GroupName="Player" Checked="RdoThreePlayer_Checked"/>
+        <RadioButton x:Name="rdoFourPlayers" Content="4 Players" HorizontalAlignment="Left" Margin="117,175,0,0" VerticalAlignment="Top" GroupName="Player" Checked="RdoFourPlayers_Checked" />
+        <RadioButton x:Name="rdoZeroAI" Content="No AI" HorizontalAlignment="Left" Margin="172,207,0,0" VerticalAlignment="Top" GroupName="AI" Visibility="Visible" Checked="RdoZeroAI_Checked"/>
+        <RadioButton x:Name="rdoOneAI" Content="1 AI" HorizontalAlignment="Left" Margin="46,200,0,0" VerticalAlignment="Top" GroupName="AI" Visibility="Hidden" Checked="RdoOneAI_Checked"/>
+        <RadioButton x:Name="rdoTwoAI" Content="2 AI" HorizontalAlignment="Left" Margin="46,216,0,0" VerticalAlignment="Top" GroupName="AI" Visibility="Hidden" Checked="RdoTwoAI_Checked"/>
+        <RadioButton x:Name="rdoThreeAI" Content="3 AI" HorizontalAlignment="Left" Margin="117,200,0,0" VerticalAlignment="Top" GroupName="AI" Visibility="Hidden" Checked="RdoThreeAI_Checked"/>
+        <RadioButton x:Name="rdoFourAI" Content="4 AI" HorizontalAlignment="Left" Margin="117,216,0,0" VerticalAlignment="Top" GroupName="AI" Visibility="Hidden" Checked="RdoFourAI_Checked" />
+        <CheckBox x:Name="cbxEasy" Content="Easy" HorizontalAlignment="Left" Margin="64,246,0,0" VerticalAlignment="Top" Checked="CbxEasy_Checked"/>
+        <CheckBox x:Name="cbxHard" Content="Hard" HorizontalAlignment="Left" Margin="112,246,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="CbxHard_Checked">
+            <CheckBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.543"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+
+    </Grid>
+</Window>

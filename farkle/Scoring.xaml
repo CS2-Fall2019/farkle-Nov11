@@ -1,0 +1,62 @@
+﻿<Window x:Name="ScoreSheet" x:Class="farkle.Scoring"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:farkle"
+        mc:Ignorable="d"
+        Title="Scoring" Height="445.958" Width="800" Background="#FF2A7A13">
+    <Grid Background="#FF15590B">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="484*"/>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="239*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Scoring" HorizontalAlignment="Left" Margin="272,0,0,0" VerticalAlignment="Top" FontSize="56" Foreground="White"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="58,98,0,0" VerticalAlignment="Top" Width="50" Source="Resources/1Die.jpg"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="468,98,0,0" VerticalAlignment="Top" Width="50" Source="Resources/5Die.jpg" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblScoring1" Content="= 100" HorizontalAlignment="Left" Margin="113,110,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="38" Foreground="White"/>
+        <Label x:Name="lblScoring2" Content="= 50" HorizontalAlignment="Left" Margin="39.177,110,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="38" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="10,165,0,0" VerticalAlignment="Top" Width="50" Source="Resources/1Die.jpg"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="65,165,0,0" VerticalAlignment="Top" Width="50" Source="Resources/1Die.jpg"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="120,165,0,0" VerticalAlignment="Top" Width="50" Source="Resources/1Die.jpg"/>
+        <Label x:Name="lblScoring3" Content="= 1000" HorizontalAlignment="Left" Margin="170,177,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="38"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="10,223,0,0" VerticalAlignment="Top" Width="50" Source="Resources/2Die.jpg"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="65,223,0,0" VerticalAlignment="Top" Width="50" Source="Resources/2Die.jpg"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="120,223,0,0" VerticalAlignment="Top" Width="50" Source="Resources/2Die.jpg"/>
+        <Label x:Name="lblScoring5" Content="= 200" HorizontalAlignment="Left" Margin="170,235,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="38"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="10,278,0,0" VerticalAlignment="Top" Width="50" Source="Resources/3Die.jpg"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="65,278,0,0" VerticalAlignment="Top" Width="50" Source="Resources/3Die.jpg"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="120,278,0,0" VerticalAlignment="Top" Width="50" Source="Resources/3Die.jpg"/>
+        <Label x:Name="lblScoring4" Content="= 300" HorizontalAlignment="Left" Margin="175,290,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="38"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="10,333,0,0" VerticalAlignment="Top" Width="50" Source="Resources/4Die.jpg"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="65,333,0,0" VerticalAlignment="Top" Width="50" Source="Resources/4Die.jpg"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="120,333,0,0" VerticalAlignment="Top" Width="50" Source="Resources/4Die.jpg"/>
+        <Label x:Name="lblScoring6" Content="= 400" HorizontalAlignment="Left" Margin="175,345,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="38"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="31.177,168,0,0" VerticalAlignment="Top" Width="50" Source="Resources/5Die.jpg" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="17,168,0,0" VerticalAlignment="Top" Width="50" Source="Resources/5Die.jpg" Grid.Column="2"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="72,168,0,0" VerticalAlignment="Top" Width="50" Source="Resources/5Die.jpg" Grid.Column="2"/>
+        <Label x:Name="lblScoring7" Content="= 500" HorizontalAlignment="Left" Margin="127,177,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="38" Grid.Column="2"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="31.177,223,0,0" VerticalAlignment="Top" Width="50" Source="Resources/6Die.jpg" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="17,223,0,0" VerticalAlignment="Top" Width="50" Source="Resources/6Die.jpg" Grid.Column="2"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="72,223,0,0" VerticalAlignment="Top" Width="50" Source="Resources/6Die.jpg" Grid.Column="2"/>
+        <Label x:Name="lblScoring8" Content="= 600" HorizontalAlignment="Left" Margin="127,235,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="38" Grid.Column="2"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="350,278,0,0" VerticalAlignment="Top" Width="50" Source="Resources/1Die.jpg"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="405,278,0,0" VerticalAlignment="Top" Width="50" Source="Resources/2Die.jpg"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="460,278,0,0" VerticalAlignment="Top" Width="50" Source="Resources/3Die.jpg" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="31.177,278,0,0" VerticalAlignment="Top" Width="50" Source="Resources/4Die.jpg" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="17,278,0,0" VerticalAlignment="Top" Width="50" Source="Resources/5Die.jpg" Grid.Column="2"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="72,278,0,0" VerticalAlignment="Top" Width="50" Source="Resources/6Die.jpg" Grid.Column="2"/>
+        <Label x:Name="lblScoring9" Content="= 3000" HorizontalAlignment="Left" Margin="127,290,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="38" Grid.Column="2"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="351,333,0,0" VerticalAlignment="Top" Width="50" Source="Resources/1Die.jpg"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="406,333,0,0" VerticalAlignment="Top" Width="50" Source="Resources/1Die.jpg"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="461,333,0,0" VerticalAlignment="Top" Width="50" Source="Resources/2Die.jpg" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="32.177,333,0,0" VerticalAlignment="Top" Width="50" Source="Resources/2Die.jpg" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="17,333,0,0" VerticalAlignment="Top" Width="50" Source="Resources/3Die.jpg" Grid.Column="2"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="72,333,0,0" VerticalAlignment="Top" Width="50" Source="Resources/3Die.jpg" Grid.Column="2"/>
+        <Label x:Name="lblScoring10" Content="= 1500" HorizontalAlignment="Left" Margin="127,345,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="38" Grid.Column="2"/>
+        <Label x:Name="lblThreePair" Content="3 pairs" HorizontalAlignment="Left" Margin="284,345,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="White"/>
+        <Label x:Name="lblRun" Content="Run" HorizontalAlignment="Left" Margin="304,290,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="White"/>
+
+    </Grid>
+</Window>

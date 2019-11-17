@@ -1,0 +1,16 @@
+<StyleCopSettings Version="105">
+  <GlobalSettings>
+    <CollectionProperty Name="RecognizedWords">
+      <Value>Bool</Value>
+      <Value>Btn</Value>
+      <Value>farkle</Value>
+      <Value>farkled</Value>
+      <Value>Gameboard</Value>
+      <Value>Img</Value>
+      <Value>Imgsaved</Value>
+      <Value>Incrementer</Value>
+      <Value>scorable</Value>
+      <Value>xaml</Value>
+    </CollectionProperty>
+  </GlobalSettings>
+</StyleCopSettings>
